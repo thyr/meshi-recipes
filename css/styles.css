@@ -8,160 +8,26 @@
   src: url(../fonts/Raleway-Regular.ttf);
 }
 
-/*RESET*/
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+/* RESETS */
+* {
   margin: 0;
   padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-html,
-body,
-div,
-ul,
-dl,
-dt,
-dd,
-ol,
-ul,
-li {
-  box-sizing: border-box;
-}
-
-a {
-  color: #eee;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-body {
-  line-height: 1;
-}
-ol,
-ul {
   list-style: none;
-}
-blockquote,
-q {
-  quotes: none;
-}
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
+  text-decoration: none;
+  line-height: normal;
 }
 
-/*MAIN*/
-
+/* MAIN */
 body {
-  font-size: 1em;
-  line-height: 1em;
+  font-size: 13pt;
+  line-height: normal;
   font-family: Raleway, sans-serif;
   background: url(../img/bg.png) no-repeat fixed, #f9f9f9;
   background-size: cover;
+  color: #eee;
+}
+
+a{
   color: #eee;
 }
 
@@ -173,11 +39,13 @@ body {
   flex-direction: column;
   justify-content: space-between;
   flex: 1;
-  padding: 0 24px;
+  padding: 0;
 }
 
 .header {
-  padding: 16px;
+  margin: 0;
+  padding: 2%;
+  background: #111111bb;
 }
 
 .navbar {
@@ -185,7 +53,8 @@ body {
   flex: 1;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 48px;
+  margin-bottom: 3%;
+  flex-wrap: wrap;
 }
 
 .logo {
@@ -194,16 +63,69 @@ body {
 
 .links * {
   margin: 0 8px;
-  
 }
 
 .links a {
   font-family: Clementine;
 }
 
-.header-img {
-  max-height: 200px;
+.header-content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 0 5%;
+  margin-bottom: 2%;
 }
+
+.header-text {
+  flex: 1;
+}
+
+.header-img {
+  align-self: center;
+  flex: 0 3 auto;
+}
+
+.header-img img {
+  border-radius: 15px;
+  width: 100%;
+  max-height: 250px;
+}
+
+.top-box {
+  margin: 0;
+  padding: 3% 5%;
+  background: #333333bb;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 2% 0;
+  gap: 2%;
+}
+
+.card {
+  flex: 1 0;
+  text-align: center;
+  align-self: flex-start;
+  min-width: 200px;
+  margin: 1%;
+}
+
+.card img {
+  border-radius: 15px;
+  width: 100%;
+  max-height: 200px;
+  margin-bottom: 1%;
+  flex: 0 3 auto;
+}
+
+
 
 .quote {
   font-family: Clementine;
@@ -217,5 +139,28 @@ body {
 }
 
 button {
-    font-family: Clementine;
+  font-family: Clementine;
+  padding: 4px 10px;
+}
+
+.text-h1 {
+  font-family: Clementine;
+  font-weight: bold;
+  font-size: 28pt;
+  line-height: normal;
+}
+
+.text-h2 {
+  font-family: Clementine;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 24pt;
+  line-height: normal;
+  text-align: center;
+}
+
+.text-h3 {
+}
+
+.subtext {
 }
