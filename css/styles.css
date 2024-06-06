@@ -1,91 +1,221 @@
 @font-face {
-    font-family: Clementine;
-    src: url(../fonts/clementine.otf);
+  font-family: Clementine;
+  src: url(../fonts/clementine.otf);
 }
 
 @font-face {
-    font-family: Raleway;
-    src: url(../fonts/Raleway-Regular.ttf);
+  font-family: Raleway;
+  src: url(../fonts/Raleway-Regular.ttf);
 }
 
 /*RESET*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
-html, body, div, ul, dl, dt, dd, ol, ul, li {
-    box-sizing: border-box;
+html,
+body,
+div,
+ul,
+dl,
+dt,
+dd,
+ol,
+ul,
+li {
+  box-sizing: border-box;
+}
+
+a {
+  color: #eee;
+  text-decoration: none;
+  font-weight: 500;
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /*MAIN*/
 
 body {
-	font-size: 1em;
-	line-height: 1em;
-	font-family: Raleway, sans-serif;
-	background: url(../img/bg.png) no-repeat fixed, #f9f9f9;
-    background-size: cover;
-	color: #eee;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex: 1;
+  font-size: 1em;
+  line-height: 1em;
+  font-family: Raleway, sans-serif;
+  background: url(../img/bg.png) no-repeat fixed, #f9f9f9;
+  background-size: cover;
+  color: #eee;
 }
 
 .container {
-    margin: 0 15%;
-    background: #222222bb;
+  margin: 0 15%;
+  background: #222222bb;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  padding: 0 24px;
 }
 
 .header {
-    padding: 16px;
+  padding: 16px;
+}
+
+.navbar {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 48px;
 }
 
 .logo {
-    max-height: 75px;
+  max-height: 75px;
+}
+
+.links * {
+  margin: 0 8px;
+  
+}
+
+.links a {
+  font-family: Clementine;
 }
 
 .header-img {
-    max-height: 200px;
+  max-height: 200px;
+}
+
+.quote {
+  font-family: Clementine;
+  font-style: italic;
+  text-align: justify;
+}
+
+.quote-author {
+  font-weight: bold;
+  text-align: right;
+}
+
+button {
+    font-family: Clementine;
 }
